@@ -13,11 +13,11 @@ namespace Every
         static void Main(string[] args)
         {
             ServiceManager.Initialize(
-                name: "EveryService", 
-                displayName: "Every",
+                name: "Every.WindowsService", 
+                displayName: "Every Service",
                 description: "Schedule stuff to run every...");
 
-            var runner = new Runner(new WindowsService());
+            var runner = new Runner(new DichotomyService());
             runner.Run();
         }
     }

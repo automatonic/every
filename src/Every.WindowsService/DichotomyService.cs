@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Every
 {
-    public class WindowsService : IDichotomyService
+    public class DichotomyService : IDichotomyService
     {
         public void Start()
         {
